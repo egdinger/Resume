@@ -1,0 +1,97 @@
+% resume.tex
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.8in]{geometry}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+\newcommand{\heading}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+\author{Eric Dinger}
+\begin{document}
+{\LARGE
+\textbf{Eric Dinger}\\
+egdinger@gmail.com\\
+479-244-6432}
+\vspace{.5em}
+\hrule
+\vspace{-.5em}
+
+\subsection*{Education}
+	\begin{itemize}
+	\item
+		\heading
+			{Portland State University}
+			{Portland, OR}
+		\heading 
+			{Maseeh College of Engineering, Bachlor of Science Computer Science}
+			{2006-2012}
+	\end{itemize}
+
+\hrule
+
+\subsection*{Open Source Software Experience}
+	\begin{itemize}
+		\item 
+		\heading
+			{ Autonomus Vehicles Team}
+			{Portland State University}
+		\begin{itemize*}
+			\item Description goes here
+			\item More description
+		\end{itemize*}
+		\item 
+		\heading
+			{CS Capstone: Linux Kernel Tinification}
+			{Portland State University}
+		\begin{itemize*}
+			\item Description goes here
+			\item More description
+		\end{itemize*}
+	\end{itemize}
+
+\hrule
+
+\subsection*{Work Experience}
+	\begin{itemize}
+		\item 
+		\heading
+			{Mentor Graphics}
+			{??2011 - September 2011}
+		Software Engineer Intern
+		\begin{itemize*}
+			\item Description goes here
+			\item More description
+		\end{itemize*}
+		\item 
+		\heading
+			{FLIR}
+			{??2010 - September 2010}
+			Software Engineer Intern
+		\begin{itemize*}
+			\item Description goes here
+			\item More description
+		\end{itemize*}
+	\end{itemize}
+
+\hrule
+
+\subsection*{Skills}
+	\begin{itemize}
+		\item 
+		\textbf{Languages}\\
+		 C, \CPP, Visual \CPP,  Python, Java, Android, Shell scripting, TCL
+		\item
+		\textbf{Technologies}\\
+		GCC, G++, GDB, OBJDUMP, Android, I2C, GIT, GREP
+	\end{itemize}
+\end{document}
