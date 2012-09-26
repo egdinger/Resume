@@ -10,6 +10,9 @@
 \newcommand{\CPP}
 {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
 
+\newcommand{\GPP}
+{G\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
 \newcommand{\heading}[2]
 {\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
 #1 &
@@ -18,13 +21,19 @@
 
 \author{Eric Dinger}
 \begin{document}
-{\LARGE
-\textbf{Eric Dinger}\\
-egdinger@gmail.com\\
-479-244-6432}
-\vspace{.5em}
+
+%This sets the vertical spacing in the tabular array farther apart so the g isn't squished into the top of the 7
+ \renewcommand*\arraystretch{1.5}
+
+\noindent{{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	\LARGE{\textbf{Eric Dinger}} & \LARGE{{5024 SE 33rd Pl}} \\
+	\LARGE{egdinger@gmail.com} & \LARGE{ Portland, OR} \\
+	\LARGE{479-244-6432} & \LARGE{97202}
+\end{tabular*}}}
+
+\vspace{.2em}
 \hrule
-\vspace{-.5em}
+\vspace{-.2em}
 
 \subsection*{Education}
 	\begin{itemize}
@@ -33,8 +42,8 @@ egdinger@gmail.com\\
 			{Portland State University}
 			{Portland, OR}
 		\heading 
-			{Maseeh College of Engineering, Bachlor of Science Computer Science}
-			{2006-2012}
+			{Maseeh College of Engineering, B.S. Computer Science}
+			{2012}
 	\end{itemize}
 
 \hrule
@@ -43,20 +52,22 @@ egdinger@gmail.com\\
 	\begin{itemize}
 		\item 
 		\heading
-			{ Autonomus Vehicles Team}
+			{\textbf{Autonomus Vehicles Team}}
 			{Portland State University}
 		\begin{itemize*}
-			\item Description goes here
-			\item More description
-		\end{itemize*}
+			\item Created drivers for sensors: ADXL345 (I2C accelerometer), Maxbotixs sonar sensor, Sharp IR Distance sensor, Autopilot Voltage and Current sensor.
+			\item I2C bug
+			\item Created a simple physics simulation of a quadcopter, gyro and accelerometer in python.
+			\item Command line GDB
+			\item Height measuring code
+		\end{itemize*} 
 		\item 
 		\heading
-			{CS Capstone: Linux Kernel Tinification}
+			{\textbf{CS Capstone: Linux Kernel Tinification}}
 			{Portland State University}
-		\begin{itemize*}
-			\item Description goes here
-			\item More description
-		\end{itemize*}
+		%\begin{itemize*}
+			Led a capstone team that created several patches to the Linux kernel with the aim of drastically reducing the on disk size for use in embedded environments. These 					patches include compile time options for core dump removal, tty removal, real time scheduler removal, and changed the command line options for the compression stub to 				compile time. I also managed KVM based virtual machines used for testing and debugging the modified kernels.
+		%\end{itemize*}
 	\end{itemize}
 
 \hrule
@@ -65,22 +76,33 @@ egdinger@gmail.com\\
 	\begin{itemize}
 		\item 
 		\heading
-			{Mentor Graphics}
-			{??2011 - September 2011}
-		Software Engineer Intern
-		\begin{itemize*}
-			\item Description goes here
-			\item More description
-		\end{itemize*}
+			{\textbf{Mentor Graphics}}
+			{April 2011 - September 2011}
+		\emph{Software Engineer Intern}\\
+		%\begin{itemize*}
+		During my internship I created several regressions tests for YieldSever as a way to familiarize my self with the environment. Using TCL I created a high level 						programmable interface for analyzing SVRF rule files inside of YieldServer. My final project was to modify the built-in TCL info using command using C++ in 						YieldServer to suppress the return of internal API namespaces. 
+		%\end{itemize*}
 		\item 
 		\heading
-			{FLIR}
-			{??2010 - September 2010}
-			Software Engineer Intern
+			{\textbf{FLIR}}
+			{April 2010 - September 2010}
+			\emph{Software Engineer Intern}
 		\begin{itemize*}
-			\item Description goes here
-			\item More description
+			\item Ran Coverity on the code base and reported the findings. Explored how to integrate the use of Coverity into the existing build process.
+			\item Worked with manufacturing to design a new tool to set configurations and upload software to the new model Star SAFIRE.
+			\item Updated WinSpectrum to use the newest codebase and added the ability to work with NTSC input and output. This required working with Blackmagic Capture Cards and updating the onscreen symbology.
+			\item Customer integration of updated WinSpectrum in an unusual networking environment involving serial to Ethernet converters and 9 bit serial protocols.
+			\item Created a proof of concept DLL that allowed Labview to communicate with the remote application protocol interface in the new Star SAFIRE.
 		\end{itemize*}
+	\end{itemize}
+
+\hrule
+
+\subsection*{Personal Projects}
+	\begin{itemize}
+		\item 
+			\textbf{Android RTI Calculator}
+			A small app I used to get familiar with the Android environment. RTI is easily compared number relating to suspension performance in offroad trucks, by inputting a few  				measurement this app gives you your RTI number.
 	\end{itemize}
 
 \hrule
@@ -92,6 +114,11 @@ egdinger@gmail.com\\
 		 C, \CPP, Visual \CPP,  Python, Java, Android, Shell scripting, TCL
 		\item
 		\textbf{Technologies}\\
-		GCC, G++, GDB, OBJDUMP, Android, I2C, GIT, GREP
+		GCC, \GPP{}, GDB, objdump, Android, I2C, Git, grep, Coverity
 	\end{itemize}
+
+\hrule
+
+\subsection*{Activities}
+Mecop Internship Program, Portland State Aerospace Society, Viking Motor Sports, Autonomous Vehicles Team
 \end{document}
