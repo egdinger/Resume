@@ -41,14 +41,11 @@
 		\heading
 			{Portland State University}
 			{Portland, OR}
+
+		\vspace{-1em}
 		\heading 
-			{Maseeh College of Engineering, B.S. Computer Science}
+			{ B.S. Computer Science, GPA: 3.45}
 			{2012}
-		\begin{itemize}
-			\item Awards and Honors \\
-			Mecop Internship
-			\item Clubs and Activities \\
-		\end{itemize}
 	\end{itemize}
 
 \hrule
@@ -61,18 +58,21 @@
 			{Portland State University}
 		\begin{itemize*}
 			\item Created drivers for sensors: ADXL345 (I2C accelerometer), Maxbotixs sonar sensor, Sharp IR Distance sensor, Autopilot Voltage and Current sensor.
-			\item I2C bug
+			\item Discovered a bug in the Microbuiler.eu LPC1343 I2C library that caused an malformed stop message to occur during some multi-byte reads. Worked in a team of two to fix the bug.
 			\item Created a simple physics simulation of a quadcopter, gyro and accelerometer in python.
-			\item Command line GDB
-			\item Height measuring code
+			\item Added an option to the make file that launches  and configures GDB to connect to the remote host (Embedded microcontroller) for debugging
+			\item Designed and implemented the height measuring subsystem for a quadcopter using a state machine.
 		\end{itemize*} 
 		\item 
 		\heading
 			{\textbf{CS Capstone: Linux Kernel Tinification}}
 			{Portland State University}
-		%\begin{itemize*}
-			Led a capstone team that created several patches to the Linux kernel with the aim of drastically reducing the on disk size for use in embedded environments. These 					patches include compile time options for core dump removal, tty removal, real time scheduler removal, and changed the command line options for the compression stub to 				compile time. I also managed KVM based virtual machines used for testing and debugging the modified kernels.
-		%\end{itemize*}
+		\begin{itemize*}
+			\item Led a capstone (final project) team of 6 students that created several patches to the Linux kernel with the aim of drastically reducing the on disk size for use in embedded environments.
+ 			\item Patches include: compile time options for core dump removal, tty removal, real time scheduler removal, and changed the command line options for the compression stub to compile time.
+			\item Configured KVM based virtual machines used for testing and debugging the modified kernels.
+			\item Created testing procedures for the modified kernels.
+		\end{itemize*}
 	\end{itemize}
 
 \hrule
@@ -83,7 +83,7 @@
 		\heading
 			{\textbf{Mentor Graphics}}
 			{April 2011 - September 2011}
-		\emph{Software Engineer Intern}\\
+		\emph{Software Engineer Intern}
 		\begin{itemize*}
 			\item Created a high level programmable interface using TCL for analyzing SVRF rule files inside of YieldServer.
 			\item Modify the built-in TCL info command using C++ and wrappers in YieldServer to suppress the return of internal API namespaces. 
@@ -107,8 +107,14 @@
 \subsection*{Personal Projects}
 	\begin{itemize}
 		\item 
-			\textbf{Android RTI Calculator}
-			A small app I used to get familiar with the Android environment. RTI is easily compared number relating to suspension performance in offroad trucks, by inputting a few  				measurement this app gives you your RTI number.
+			\heading
+				{\textbf{Android RTI Calculator}}
+				{2012}
+			\vspace{-2em}
+			\begin{itemize}
+				\item A small app I used to get familiar with the Android environment. RTI is easily compared number relating to suspension performance in offroad trucks, by inputting a few  measurement this app gives you your RTI number.
+				\item Awaiting graphic design work before being offered on Google Play.
+			\end{itemize}
 	\end{itemize}
 
 \hrule
@@ -117,10 +123,20 @@
 	\begin{itemize}
 		\item 
 		\textbf{Languages}\\
-		 C, \CPP, Visual \CPP,  Python, Java, Android, Shell scripting, TCL
+		 C, \CPP, Visual \CPP,  Python, Java, Shell scripting, TCL
 		\item
 		\textbf{Technologies}\\
-		GCC, \GPP{}, GDB, objdump, Android, I2C, Git, grep, Coverity
+		GCC, \GPP{}, GDB, objdump, Android, I2C, Git, grep, Coverity, Windows, Boost \CPP Library's, 
 	\end{itemize}
+
+\hrule
+
+\subsection*{Awards \& Honors}
+			Mecop Internship\\
+
+\hrule
+
+\subsection*{Clubs \& Activities}
+			Portland State Aerospace Society, Viking Motorsports, Autonomous Vehicles Team, IHSTO\\
 
 \end{document}
